@@ -8,5 +8,7 @@ struct ContentView: View {
         TextField("number2", value: $number2, format: .number)
        
     
+      
+        TextField("number", value: $number1, format: .number)
     }
 }
