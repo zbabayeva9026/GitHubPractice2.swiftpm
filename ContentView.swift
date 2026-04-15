@@ -2,17 +2,18 @@ import SwiftUI
 
 struct ContentView: View {
     @State var number1: Int = 0
-    
+    @State var answer : Int = 0
     @State var number2 = 0
     var body: some View {
         TextField("number2", value: $number2, format: .number)
-       Button("answer") {
-           var sum: Int = 0
+      
            
             
-        }
+
     
       
         TextField("number", value: $number1, format: .number)
+        Text("Answer: \(answer)")
     }
+    
 }
