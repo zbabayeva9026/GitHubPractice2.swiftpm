@@ -12,15 +12,23 @@ struct ContentView: View {
             Button("add") {
                 answer = number1 + number2
             }
+            .background(.black)
+            .foregroundStyle(.white)
             Button("subtract") {
                 answer = number1 - number2
             }
+            .background(.gray)
+            .foregroundStyle(.white)
             Button("multiply") {
                 answer = number1 * number2
             }
+            .background(.brown)
+            .foregroundStyle(.white)
             Button("divide") {
                 answer = number1/number2
             }
+            .background(.red)
+            .foregroundStyle(.white)
         }
         Text("Answer: \(answer)")
             .font(.headline)
