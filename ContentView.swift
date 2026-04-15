@@ -8,13 +8,22 @@ struct ContentView: View {
         TextField("number2", value: $number2, format: .number)
      
         TextField("number", value: $number1, format: .number)
-        Button("add") {
-            answer = number1 + number2
-        }
-        Button("subtract") {
-            answer = number1 - number2
+        HStack(){
+            Button("add") {
+                answer = number1 + number2
+            }
+            Button("subtract") {
+                answer = number1 - number2
+            }
+            Button("multiply") {
+                answer = number1 * number2
+            }
+            Button("divide") {
+                answer = number1/number2
+            }
         }
         Text("Answer: \(answer)")
+            .font(.headline)
     }
     
 }
